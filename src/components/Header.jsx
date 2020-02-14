@@ -1,12 +1,16 @@
 import React from 'react';
+import GoogleFontLoader from 'react-google-font-loader';
 
 function Header() {
   var headerStyle = {
-    backgroundColor: 'black',
-    margin: '5px',
+    backgroundColor: 'white',
+    marginTop: '15px',
     border:'15px solid black',
     width: '80%',
-    color:'white'
+    color:'black',
+    display: 'inline-block',
+    fontWeight: 'bold',
+    fontFamily: 'BowlbyOneSC',
    };
   return (
     <div style={headerStyle} >
