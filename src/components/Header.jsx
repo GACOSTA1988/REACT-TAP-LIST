@@ -15,7 +15,7 @@ function Header() {
   return (
     <div style={headerStyle} >
     <header>
-        <h1>TAP DADDY</h1>
+        <h1>🍻TAP DADDY🍻</h1>
       </header>
     </div>
   );
