@@ -5,54 +5,40 @@ import { Link } from 'react-router-dom';
 
 function NavBar(props) {
   var navBarAddStyles = {
-    backgroundColor: 'black',
+    backgroundColor: 'white',
+    fontColor: 'black',
     fontWeight: 'bold',
     fontFamily: 'BowlbyOneSC',
     width: '80%',
-    margin: '0 auto'
+    display: 'inline-block',
+    textAlign: 'center',
+    marginTop: '15px',
+    border:'15px solid black',
 
 
    };
   return (
     <div style={navBarAddStyles}>
-    <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
-    <Navbar.Brand href="#">⚡️CURRENT BREWS ON TAP⚡️</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="black" variant="light">
+    <Navbar.Brand href="#">⚡️BREWS ON TAP⚡️</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
       <Nav className="mr-auto">
         <NavDropdown title="FEATURES" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">KING OF THE ROAD</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">ADD A NEW KEG</NavDropdown.Item>
         </NavDropdown>
       </Nav>
 
       <Nav className="mr-auto">
         <NavDropdown title="SHOP" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1"><Link to="/boards">BOARDS</Link></NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
-      <Nav className="mr-auto">
-        <NavDropdown title="VIDEO" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1"><Link to="/Video">HALL OF MEAT</Link></NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
-      <Nav className="mr-auto">
-        <NavDropdown title="MAGAZINE" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">SUBSCRIBE</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">CLOTHING</NavDropdown.Item>
         </NavDropdown>
       </Nav>
 
       <Nav className="mr-auto">
         <NavDropdown title="EVENTS" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">CONTEST</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
-      <Nav className="mr-auto">
-        <NavDropdown title="MORE..." id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">SKETCHY SHIT</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">BEER RELEASES</NavDropdown.Item>
         </NavDropdown>
       </Nav>
 
