@@ -7,6 +7,7 @@ function TapList() {
 
 const tapList = [
   {
+    number: '1',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -14,6 +15,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '2',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -21,6 +23,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '3',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -28,6 +31,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '4',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -35,6 +39,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '5',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -42,6 +47,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '6',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -49,6 +55,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '7',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -56,6 +63,7 @@ const tapList = [
     imgLink: Keg,
   },
   {
+    number: '8',
     name: 'Amaze and Blaze',
     brand: 'Monkish',
     price: '$6.50',
@@ -64,19 +72,17 @@ const tapList = [
   },
 ]
 
-// const tapListStyle = {
-//   fontFamily: 'BowlbyOneSC',
-//   backgroundColor: 'black',
-//   color: 'white',
-//   alignItems:'center',
-//   maxWidth: '97%'
-// }
+const tapListStyle = {
+    width: '80%',
+    display: 'inline-block',
+}
 
   return (
-    <div>
+    <div style={tapListStyle}>
       <hr />
       {tapList.map((tap, index) =>
         <Tap
+        number={tap.number}
         name={tap.name}
         brand={tap.brand}
         price={tap.price} 

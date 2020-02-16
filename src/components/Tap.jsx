@@ -10,6 +10,8 @@ const tapStyle = {
   color: 'black',
   marginTop: '15px',
   marginBottom: '15px',
+  marginRight: '15px',
+  marginLeft: '15px',
   width: '20%',
   fontWeight: 'bold',
   fontFamily: 'BowlbyOneSC',
@@ -18,14 +20,15 @@ const tapStyle = {
   border:'15px solid black',
 }
 const kegIconStyle = {
-  width: '35%',
-  height: '35%',
+  width: '45%',
+  height: '45%',
   padding: '2.5px',
   alignItems: 'right',
 }
 
   return (
     <div style={tapStyle}>
+        <h5 style={{color: 'red', fontWeight: 'bold'}}>{props.number}</h5>
       <h5>{props.name}</h5>
       <p>{props.brand}</p>
       <p>{props.price}</p>
@@ -37,6 +40,7 @@ const kegIconStyle = {
 }
 
 Tap.propTypes = {
+    number: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
