@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="App">
         <Header/>
-        <NavBar/>
+        <Switch>
+        <Route exact path='/navbar' component={NavBar} />
+        </Switch>
         <TapList/>
     </div>
   );

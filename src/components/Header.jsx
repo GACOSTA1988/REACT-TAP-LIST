@@ -1,5 +1,6 @@
 import React from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
+import { Link } from 'react-router-dom';
 
 function Header() {
   var headerStyle = {
@@ -15,7 +16,7 @@ function Header() {
   return (
     <div style={headerStyle} >
     <header>
-        <h1>🍻TAP DADDY🍻</h1>
+        <h1><Link to="/navbar">🍻TAP DADDY🍻</Link></h1>
       </header>
     </div>
   );
