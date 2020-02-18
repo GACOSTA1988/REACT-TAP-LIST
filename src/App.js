@@ -13,6 +13,7 @@ function App() {
         <Header/>
         <Switch>
         <Route exact path='/navbar' component={NavBar} />
+        <Route component={Error404} />
         </Switch>
         <TapList/>
     </div>
