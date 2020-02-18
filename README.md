@@ -10,18 +10,31 @@ TAP DADDY APP MAP
 
 ### Zip:
 
-1. Click [here](https://github.com/eliza85/ascii_group_project.git) to go to the repository location where you will find the clone/download menu.
+1. Click [here](https://github.com/GACOSTA1988/REACT-TAP-LIST.git) to go to the repository location where you will find the clone/download menu.
+2. Navigate to the directory (folder) that contains your browser's downloads.
+3. Double-click on REACT-TAP-LIST directory (folder).
+
 
 
 ##### Mac OS Installation
 
  1. If any errors occur here, refer to the **Troubleshooting** section below these instructions.
-**Ascii Land**.
+ 2. Run npm install while in the root directory.
+ 3. Run npm start while in the root directory.
+ 4. Open chrome broswer and visit localhost:3000
+**Tap Daddy**.
 
 
 - - -
 
 ## Specifications
+1. Employees can Click on Tap Daddy header to show admin NavBar.
+2. Employees can Click on Brew on Tap section of the NvaBar to show tap list.
+3.
+4.
+5.
+6.
+
 
 - - -
 
@@ -29,18 +42,15 @@ TAP DADDY APP MAP
 
  - React
  - Google Font Loader
+ - React Router
 
 - - -
 
 ## Troubleshooting
 
-#### Can't install RMagick. Can't find libMagick or one of the dependent libraries. Check the mkmf.log file for more detailed information
+####
 
-Typically this message means that one or more of the libraries that ImageMagick
-depends on hasn't been installed. Examine the mkmf.log file in the ext/RMagick
-subdirectory of the installation directory for any error messages. These
-messages typically contain enough additional information for you to be able to
-diagnose the problem. Also see [this FAQ](https://web.archive.org/web/20131206133600/http://rmagick.rubyforge.org/install-faq.html#libmagick).
+
 
 
 ```sh

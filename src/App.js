@@ -6,6 +6,7 @@ import TapList from './components/TapList.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from 'react-bootstrap';
 import { Switch, Route } from 'react-router-dom';
+import Error404 from './components/Error404';
 
 function App() {
   return (
