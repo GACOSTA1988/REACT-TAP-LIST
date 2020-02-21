@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <NewTapForm />
       <Switch>
         <Route exact path="/navbar" component={NavBar} />
+        <Route exact path="/newtapform" component={NewTapForm} />
         <Route component={Error404} />
       </Switch>
       <TapList />
