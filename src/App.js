@@ -6,10 +6,10 @@ import TapList from "./components/TapList.jsx";
 import NewTapForm from "./components/NewTapForm.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "react-bootstrap";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Error404 from "./components/Error404";
 
-export default class App extends React.component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ export default class App extends React.component {
 
   handleAddingNewTap(newTap) {
     this.setState({
-      masterTapList: [...this.state.masterTicketList, newTap]
+      masterTapList: [...this.state.masterTapList, newTap]
     });
   }
 
@@ -30,10 +30,15 @@ export default class App extends React.component {
         <Header />
         <Switch>
           <Route exact path="/navbar" component={NavBar} />
-          <Route exact path="/newtapform" component={NewTapForm} />
+          <Route
+            onNewTapCreation={this.handleAddingNewTap}
+            exact
+            path="/newtapform"
+            component={NewTapForm}
+          />
           <Route component={Error404} />
         </Switch>
-        <TapList />
+        <TapList ticketList={this.state.masterTapList} />
       </div>
     );
   }
