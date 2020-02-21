@@ -23,9 +23,26 @@ function NewTapForm(props) {
     _alcoholContent.value = "";
   };
 
+  const formStyle = {
+    backgroundColor: "white",
+    color: "black",
+    marginTop: "15px",
+    marginBottom: "15px",
+    marginRight: "15px",
+    marginLeft: "15px",
+    width: "20%",
+    fontWeight: "bold",
+    fontFamily: "BowlbyOneSC",
+    fontSize: "10px",
+    display: "inline-block",
+    border: "15px solid black"
+  };
+
   return (
-    <div>
+    <div style={formStyle}>
       <form onSubmit={handleFormSubmission}>
+        <h3>Create new Tap</h3>
+        <hr />
         <input
           type="text"
           placeholder="Tap Name"
@@ -59,6 +76,7 @@ function NewTapForm(props) {
         />
         <hr />
         <button type="submit">Add Tap!</button>
+        <hr />
       </form>
     </div>
   );
