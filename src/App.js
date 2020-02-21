@@ -9,7 +9,14 @@ import { Navbar } from "react-bootstrap";
 import { Switch, Route } from "react-router-dom";
 import Error404 from "./components/Error404";
 
-function App() {
+export default class App extends React.component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        masterTapList: [],
+    };
+    this.handleAddingNewTap = this.handleAddingNewTap.bind(this);
+}
   return (
     <div className="App">
       <Header />
@@ -23,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+
