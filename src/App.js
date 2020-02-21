@@ -13,21 +13,28 @@ export default class App extends React.component {
   constructor(props) {
     super(props);
     this.state = {
-        masterTapList: [],
+      masterTapList: []
     };
     this.handleAddingNewTap = this.handleAddingNewTap.bind(this);
-}
-  return (
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path="/navbar" component={NavBar} />
-        <Route exact path="/newtapform" component={NewTapForm} />
-        <Route component={Error404} />
-      </Switch>
-      <TapList />
-    </div>
-  );
-}
+  }
 
+  handleAddingNewTap(newTap) {
+    this.setState({
+      masterTapList: [...this.state.masterTicketList, newTap]
+    });
+  }
 
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/navbar" component={NavBar} />
+          <Route exact path="/newtapform" component={NewTapForm} />
+          <Route component={Error404} />
+        </Switch>
+        <TapList />
+      </div>
+    );
+  }
+}

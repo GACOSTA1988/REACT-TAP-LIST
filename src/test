@@ -1,0 +1,68 @@
+
+
+const tapList = [
+  {
+    number: '1',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '2',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '3',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '4',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '5',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '6',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '7',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+  {
+    number: '8',
+    name: 'Amaze and Blaze',
+    brand: 'Monkish',
+    price: '$6.50',
+    alcoholContent: '12%',
+    imgLink: Keg,
+  },
+]
