@@ -32,7 +32,6 @@ function Tap(props) {
       <p>{props.price}</p>
       <p>{props.alcoholContent}</p>
       <img style={kegIconStyle} src={props.imgLink} alt="Keg" />
-      {/* <hr style={{backgroundColor: 'white'}}/> */}
     </div>
   );
 }

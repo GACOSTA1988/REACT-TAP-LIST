@@ -33,6 +33,7 @@ function NewTapForm(props) {
             _name = input;
           }}
         />
+        <hr />
         <input
           type="text"
           placeholder="brand"
@@ -40,6 +41,7 @@ function NewTapForm(props) {
             _brand = input;
           }}
         />
+        <hr />
         <input
           type="text"
           placeholder="price"
@@ -47,6 +49,7 @@ function NewTapForm(props) {
             _price = input;
           }}
         />
+        <hr />
         <input
           type="text"
           placeholder="Alcohol Content"
@@ -54,7 +57,8 @@ function NewTapForm(props) {
             _alcoholContent = input;
           }}
         />
-        <button type="submit">Help!</button>
+        <hr />
+        <button type="submit">Add Tap!</button>
       </form>
     </div>
   );
