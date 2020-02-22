@@ -38,7 +38,7 @@ export default class App extends React.Component {
           />
           <Route component={Error404} />
         </Switch>
-        <TapList ticketList={this.state.masterTapList} />
+        <TapList tapList={this.state.masterTapList} />
       </div>
     );
   }
