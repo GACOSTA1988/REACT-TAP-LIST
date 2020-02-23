@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { v4 } from "uuid";
 
 function NewTap(props) {
   let _name,
@@ -13,7 +14,9 @@ function NewTap(props) {
       name: _name.value,
       brand: _brand.value,
       price: _price.value,
-      alcoholContent: _alcoholContent.value
+      alcoholContent: _alcoholContent.value,
+      numberOfPints: 140,
+      id: v4()
     });
 
     _name.value = "";

@@ -13,15 +13,18 @@ function TapList(props) {
   return (
     <div style={tapListStyle}>
       <hr />
-      {props.tapList.map((tap, index) => {
-        return <Tap {...tap} key={index} />;
+      {props.tapList.map(tap => {
+        return (
+          <Tap {...tap} key={tap.id} handleBeerSale={props.handleBeerSale} />
+        );
       })}
     </div>
   );
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
+  tapList: PropTypes.array,
+  handleBeerSale: PropTypes.func.isRequired
 };
 
 export default TapList;

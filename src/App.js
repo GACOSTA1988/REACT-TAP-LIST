@@ -17,6 +17,7 @@ export default class App extends React.Component {
       masterTapList: []
     };
     this.handleAddingNewTap = this.handleAddingNewTap.bind(this);
+    this.handleBeerSale = this.handleBeerSale.bind(this);
   }
 
   handleAddingNewTap(newTap) {
@@ -25,7 +26,26 @@ export default class App extends React.Component {
     this.setState({ masterTapList: newMasterTapList });
   }
 
+  handleBeerSale(tapId) {
+    let beerIds = this.state.masterTapList.map(beer => beer.id);
+    let beerIndex = beerIds.indexOf(tapId);
+
+    // splice
+    let leftPart = this.state.masterTapList.splice(0, beerIndex);
+
+    let beer = this.state.masterTapList.find(tap => tap.id === tapId);
+    beer.numberOfPints--;
+
+    let rightPart = this.state.masterTapList.splice(
+      beerIndex,
+      this.state.masterTapList.length
+    );
+    let array = [...leftPart, beer, ...rightPart];
+    this.setState({ masterTapList: array });
+  }
+
   render() {
+    debugger;
     return (
       <div className="App">
         <Header />
@@ -39,7 +59,10 @@ export default class App extends React.Component {
           />
           <Route component={Error404} />
         </Switch>
-        <TapList tapList={this.state.masterTapList} />
+        <TapList
+          tapList={this.state.masterTapList}
+          handleBeerSale={this.handleBeerSale}
+        />
       </div>
     );
   }

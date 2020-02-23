@@ -31,6 +31,8 @@ function Tap(props) {
       <p>{props.brand}</p>
       <p>{props.price}</p>
       <p>{props.alcoholContent}</p>
+      <p>{props.numberOfPints}</p>
+      <button onClick={() => props.handleBeerSale(props.id)}>SALE!</button>
       <img style={kegIconStyle} src={props.imgLink} alt="Keg" />
     </div>
   );
@@ -42,6 +44,8 @@ Tap.propTypes = {
   brand: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
+  numberOfPints: PropTypes.number.isRequired,
+  handleBeerSale: PropTypes.func.isRequired,
   imgLink: PropTypes.string
 };
 
