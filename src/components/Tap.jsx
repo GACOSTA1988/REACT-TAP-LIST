@@ -37,12 +37,12 @@ function Tap(props) {
 }
 
 Tap.propTypes = {
-  number: PropTypes.string.isRequired,
+  number: PropTypes.string,
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
-  imgLink: PropTypes.object.isRequired
+  imgLink: PropTypes.string
 };
 
 export default Tap;

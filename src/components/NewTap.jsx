@@ -1,27 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function NewTapForm(props) {
+function NewTap(props) {
   let _name,
     _brand,
     _price,
     _alcoholContent = null;
 
-  const handleFormSubmission = e => {
+  function handleFormSubmission(e) {
     e.preventDefault();
-    props.onNewTapCreation({
+    props.onNewTap({
       name: _name.value,
       brand: _brand.value,
       price: _price.value,
-      alcoholContent: _alcoholContent.value,
-      timestamp: new Date()
+      alcoholContent: _alcoholContent.value
     });
 
     _name.value = "";
     _brand.value = "";
     _price.value = "";
     _alcoholContent.value = "";
-  };
+  }
 
   const formStyle = {
     backgroundColor: "white",
@@ -82,8 +81,8 @@ function NewTapForm(props) {
   );
 }
 
-NewTapForm.propTypes = {
-  onNewTapCreation: PropTypes.func
+NewTap.propTypes = {
+  onNewTap: PropTypes.func
 };
 
-export default NewTapForm;
+export default NewTap;
