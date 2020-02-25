@@ -21,8 +21,10 @@ export default class App extends React.Component {
   }
 
   handleAddingNewTap(newTap) {
-    let newMasterTapList = this.state.masterTapList.slice();
-    newMasterTapList.push(newTap);
+    let { masterTapList } = this.state;
+    let newMasterTapList = masterTapList.slice();
+    let newTapWithSortId = { ...newTap, sortid: masterTapList.length + 1 };
+    newMasterTapList.push(newTapWithSortId);
     this.setState({ masterTapList: newMasterTapList });
   }
 

@@ -25,21 +25,32 @@ function Tap(props) {
     alignItems: "right"
   };
 
+  const buttonStyle = {
+    marginBottom: "10px"
+  };
+
   return (
     <div style={tapStyle}>
-      <h5 style={{ color: "red", fontWeight: "bold" }}>{props.number}</h5>
-      <h5>{props.name}</h5>
-      <p>{props.brand}</p>
-      <p>{props.price}</p>
-      <p>{props.alcoholContent}</p>
-      <p>{props.numberOfPints}</p>
-      <button onClick={() => props.handleBeerSale(props.id)}>SALE!</button>
+      <h5 style={{ color: "red", fontWeight: "bold" }}>{props.sortid}</h5>
+      <h5>Tap: {props.name}</h5>
+      <p>Brewery: {props.brand}</p>
+      <p>Price: ${props.price}</p>
+      <p>ABV: {props.alcoholContent}%</p>
+      <p>Available Pints: {props.numberOfPints}</p>
       <img style={kegIconStyle} src={keg} alt="Keg" />
+      <br />
+      <button
+        style={buttonStyle}
+        onClick={() => props.handleBeerSale(props.id)}
+      >
+        SALE!
+      </button>
     </div>
   );
 }
 
 Tap.propTypes = {
+  sortid: PropTypes.number,
   number: PropTypes.string,
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
