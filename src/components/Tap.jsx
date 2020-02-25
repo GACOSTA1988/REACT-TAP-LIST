@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import PropTypes from "prop-types";
+import * as keg from "../assets/images/keg.png";
 
 function Tap(props) {
   const tapStyle = {
@@ -33,7 +34,7 @@ function Tap(props) {
       <p>{props.alcoholContent}</p>
       <p>{props.numberOfPints}</p>
       <button onClick={() => props.handleBeerSale(props.id)}>SALE!</button>
-      <img style={kegIconStyle} src={props.imgLink} alt="Keg" />
+      <img style={kegIconStyle} src={keg} alt="Keg" />
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default class App extends React.Component {
     beer.numberOfPints--;
 
     let rightPart = this.state.masterTapList.splice(
-      beerIndex,
+      beerIndex + 1,
       this.state.masterTapList.length
     );
     let array = [...leftPart, beer, ...rightPart];
