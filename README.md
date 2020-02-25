@@ -2,11 +2,9 @@
 
 TAP DADDY APP MAP
 
-![screenshot of landing page for website](./src/assets/images/tapmap.png)
+![screenshot of landing page for website](./src/assets/images/AppMap.png)
 
 ## Setup/Installation Requirements
-
-
 
 ### Zip:
 
@@ -14,49 +12,42 @@ TAP DADDY APP MAP
 2. Navigate to the directory (folder) that contains your browser's downloads.
 3. Double-click on REACT-TAP-LIST directory (folder).
 
-
-
 ##### Mac OS Installation
 
- 1. If any errors occur here, refer to the **Troubleshooting** section below these instructions.
- 2. Run npm install while in the root directory.
- 3. Run npm start while in the root directory.
- 4. Open chrome broswer and visit localhost:3000
-**Tap Daddy**.
+1.  If any errors occur here, refer to the **Troubleshooting** section below these instructions.
+2.  Run npm install while in the root directory.
+3.  Run npm start while in the root directory.
+4.  Open chrome broswer and visit localhost:3000
+    **Tap Daddy**.
 
-
-- - -
+---
 
 ## Specifications
-1. Employees can Click on Tap Daddy header to show admin NavBar.
-2. Employees can Click on Brew on Tap section of the NvaBar to show tap list.
-3.
-4.
-5.
-6.
 
+1. Employees can click on Tap Daddy header to show admin NavBar.
+2. Employees can click Features section, then go to add a tap to create a new Tao list insertion.
+3. Employees can click on View Brews on Tap section of the navbar to collapse the Navbar menu.
+4. Employees can click the sale button on each tap to keep track of total pints remaining.
 
-- - -
+---
 
 ## Technologies Used
 
- - React
- - Google Font Loader
- - React Router
+- React
+- Google Font Loader
+- React Router
 
-- - -
+---
 
 ## Troubleshooting
 
 ####
 
-
-
-
 ```sh
 
 ```
-- - -
+
+---
 
 ### Support and Contact
 
@@ -71,4 +62,3 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Copyright (c) 2020 ** George Acosta**
-

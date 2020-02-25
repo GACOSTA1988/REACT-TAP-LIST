@@ -18,7 +18,7 @@ function NavBar(props) {
   return (
     <div style={navBarAddStyles}>
       <Navbar collapseOnSelect expand="lg" bg="black" variant="light">
-        <Navbar.Brand href="#">⚡️BREWS ON TAP⚡️</Navbar.Brand>
+        <Navbar.Brand href="#">⚡️VIEW BREWS ON TAP⚡️</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
